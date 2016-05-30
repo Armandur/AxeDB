@@ -1,0 +1,2 @@
+class AxesController < ApplicationController
+end
