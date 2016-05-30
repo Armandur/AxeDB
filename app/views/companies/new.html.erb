@@ -1,26 +1,5 @@
-<h1>Add new Company</h1>
-<% form_for :company, url: company_path do |f| %>
-	<p>
-		<%= f.label :name, "Name" %><br />
-		<%= f.text_field :name %>
-	</p>
-	
-	<p>
-		<%= f.label :startyear, "Start-year" %><br />
-		<%= f.text_field :startyear %><br />
-	</p>
-	
-	<p>
-		<%= f.label :endyear, "End-year" %><br />
-		<%= f.text_field :endyear %><br />
-	</p>
-	
-	<p>
-		<%= f.label :text, "Info" %><br />
-		<%= f.text_field :text %><br />
-	</p>
-	
-	<p>
-		<%= f.submit %>
-	</p>
-<% end %>	
+<h1>New Company</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', companies_path %>
