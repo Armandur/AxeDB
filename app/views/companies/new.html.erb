@@ -1,22 +1,22 @@
 <h1>Add new Company</h1>
 <% form_for :company do |f| %>
 	<p>
-		<%= f.label :name %><br />
+		<%= f.label :name, "Name" %><br />
 		<%= f.text_field :name %>
 	</p>
 	
 	<p>
-		<%= f.label :startyear %><br />
+		<%= f.label :startyear, "Start-year" %><br />
 		<%= f.text_field :startyear %><br />
 	</p>
 	
 	<p>
-		<%= f.label :endyear %><br />
+		<%= f.label :endyear, "End-year" %><br />
 		<%= f.text_field :endyear %><br />
 	</p>
 	
 	<p>
-		<%= f.label :text %><br />
+		<%= f.label :text, "Info" %><br />
 		<%= f.text_field :text %><br />
 	</p>
 	
