@@ -1,5 +1,5 @@
 <h1>Add new Company</h1>
-<% form_for :company do |f| %>
+<% form_for :company, url: company_path do |f| %>
 	<p>
 		<%= f.label :name, "Name" %><br />
 		<%= f.text_field :name %>
